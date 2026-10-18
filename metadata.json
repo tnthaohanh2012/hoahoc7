@@ -1,0 +1,6 @@
+{
+  "name": "Chemistry Explorer - Khám phá Hóa học 7",
+  "description": "Ứng dụng tương tác mô phỏng học Hóa học Lớp 7 (KHTN 7) chuẩn KHTN Kết nối tri thức - nguyên tử, nguyên tố, bảng tuần hoàn, hóa trị, công thức hóa học và liên kết.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

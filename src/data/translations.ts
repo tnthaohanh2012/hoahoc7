@@ -1,0 +1,282 @@
+/**
+ * Bilingual Translation Dictionary (Vietnamese default & English)
+ * Fully compliant with Section 10 & SPEC Table
+ */
+export const TRANSLATIONS = {
+  vi: {
+    // App header & Nav
+    'app.title': 'Khám phá Hóa học 7',
+    'app.subtitle': 'Mô phỏng tương tác Hóa học THCS – KHTN 7 Kết nối tri thức',
+    'nav.home': 'Trang chủ',
+    'nav.path': 'Lộ trình học',
+    'nav.modules': 'Chủ đề',
+    'nav.periodicTable': 'Bảng tuần hoàn',
+    'nav.formulaWorkshop': 'Xưởng công thức',
+    'nav.moleculeStudio': 'Studio phân tử',
+    'nav.mission': 'Thử thách & Quiz',
+    'nav.progress': 'Tiến độ',
+    'nav.settings': 'Cài đặt',
+    'offline.badge': '100% Hoạt động ngoại tuyến',
+    'offline.tooltip': 'Toàn bộ dữ liệu, mô hình và bài tập được tích hợp sẵn, không cần kết nối Internet.',
+    'curriculum.badge': 'KHTN 7 – Bài 2 đến Bài 7',
+
+    // Core concepts
+    'concept.atom': 'Nguyên tử',
+    'concept.element': 'Nguyên tố hóa học',
+    'concept.molecule': 'Phân tử',
+    'concept.substance': 'Chất',
+    'concept.symbol': 'Ký hiệu hóa học',
+    'concept.valency': 'Hóa trị',
+    'concept.formula': 'Công thức hóa học',
+    'concept.bond': 'Liên kết hóa học',
+    'concept.group': 'Nhóm',
+    'concept.period': 'Chu kỳ',
+    'concept.atomicNumber': 'Số hiệu nguyên tử (Z)',
+    'concept.mass': 'Nguyên tử khối tương đối',
+
+    // Actions
+    'action.start': 'Bắt đầu ngay',
+    'action.continue': 'Tiếp tục học',
+    'action.explore': 'Khám phá',
+    'action.reset': 'Làm lại',
+    'action.check': 'Kiểm tra kết quả',
+    'action.retry': 'Thử lại câu này',
+    'action.next': 'Câu tiếp theo',
+    'action.prev': 'Câu trước',
+    'action.showHint': 'Xem gợi ý',
+    'action.hideHint': 'Ẩn gợi ý',
+    'action.similarExample': 'Ví dụ tương tự',
+    'action.pause': 'Tạm dừng',
+    'action.play': 'Tiếp tục chạy',
+    'action.rotate': 'Xoay mô hình',
+    'action.close': 'Đóng',
+    'action.resetAngle': 'Góc nhìn mặc định',
+    'action.resetProgress': 'Đặt lại toàn bộ tiến độ',
+    'action.confirmReset': 'Tôi chắc chắn muốn xóa tiến độ',
+    'action.cancel': 'Hủy bỏ',
+    'action.search': 'Tìm kiếm',
+    'action.filterAll': 'Tất cả',
+    'action.filterMetals': 'Kim loại',
+    'action.filterNonmetals': 'Phi kim',
+    'action.filterNoble': 'Khí hiếm',
+    'action.save': 'Lưu',
+
+    // Feedback
+    'feedback.correct': 'Chính xác! Làm rất tốt!',
+    'feedback.tryAgain': 'Chưa chính xác, hãy đọc kỹ gợi ý và thử lại nhé.',
+    'feedback.explanation': 'Giải thích khoa học',
+    'feedback.nextStep': 'Bước tiếp theo',
+    'feedback.misconceptionNotice': 'Lưu ý tránh nhầm lẫn',
+
+    // Periodic Table
+    'periodic.title': 'Bảng tuần hoàn các nguyên tố hóa học',
+    'periodic.subtitle': 'Khám phá 20+ nguyên tố chuẩn chương trình KHTN 7',
+    'periodic.searchPlaceholder': 'Tìm theo tên, ký hiệu (H, Na, C) hoặc số Z...',
+    'periodic.empty': 'Không tìm thấy nguyên tố phù hợp với từ khóa.',
+    'periodic.clickHint': 'Nhấn vào ô nguyên tố để xem mô hình vỏ electron Bohr và ứng dụng thực tế.',
+    'periodic.legend': 'Chú giải phân loại:',
+    'periodic.grade7Scope': 'Tập trung 20 nguyên tố đầu (H đến Ca) + Fe, Cu, Zn, Ag, Ba chuẩn KHTN 7.',
+    'periodic.electrons': 'Phân bố electron theo lớp:',
+
+    // Formula Workshop
+    'formula.title': 'Xưởng Lập Công thức Hóa học',
+    'formula.subtitle': 'Phương pháp quy tắc chéo & tối giản chỉ số theo hóa trị',
+    'formula.choosePair': 'Chọn cặp nguyên tố luyện tập:',
+    'formula.ruleTitle': 'Quy tắc hóa trị: a × x = b × y',
+    'formula.step1': 'Bước 1: Đặt công thức AxBy và ghi hóa trị tương ứng',
+    'formula.step2': 'Bước 2: Lập tỉ lệ x / y = b / a',
+    'formula.step3': 'Bước 3: Rút gọn tỉ số thành phân số tối giản',
+    'formula.step4': 'Bước 4: Viết công thức hóa học (Lược bỏ chỉ số 1)',
+    'formula.result': 'Công thức thu được:',
+    'formula.subVsCoeffTitle': 'Phân biệt Chỉ số (Subscript) và Hệ số (Coefficient)',
+    'formula.interactiveSandbox': 'Thử thách lập công thức tự do',
+
+    // Molecule & Bond Studio
+    'studio.title': 'Studio Liên kết Hóa học & Mô hình Phân tử',
+    'studio.subtitle': 'Mô hình 2D động và 3D xoay chiều trực quan về liên kết cộng hóa trị & ion',
+    'studio.selectMolecule': 'Chọn chất cần quan sát:',
+    'studio.rotateHint': 'Kéo chuột hoặc vuốt ngón tay để xoay mô hình 3D trong không gian.',
+    'studio.view2D': 'Mô hình 2D phẳng',
+    'studio.view3D': 'Mô hình 3D xoay chiều',
+    'studio.covalentExplain': 'Liên kết cộng hóa trị: Các nguyên tử phi kim góp chung electron để đạt lớp vỏ bền vững.',
+    'studio.ionicExplain': 'Liên kết ion: Nguyên tử kim loại nhường electron (tạo ion dương), phi kim nhận electron (tạo ion âm), hút nhau bằng lực tĩnh điện.',
+
+    // Limitations
+    'model.limitations': 'Lưu ý sư phạm: Mô hình quả cầu và que nối là hình ảnh trực quan ước lệ giúp hình dung trật tự liên kết. Trong thực tế, nguyên tử không có que nối cứng và kích thước không theo đúng tỉ lệ tuyệt đối.',
+
+    // Modules
+    'module1.title': 'Bài 2 & 5: Thế giới Hạt & Chất',
+    'module1.desc': 'Tìm hiểu cấu tạo nguyên tử Rutherford-Bohr và phân biệt Nguyên tử - Nguyên tố - Phân tử - Hợp chất.',
+    'module2.title': 'Bài 3: Tên gọi & Ký hiệu hóa học',
+    'module2.desc': 'Nắm vững quy tắc viết hoa chữ cái đầu và luyện nhớ ký hiệu các nguyên tố thông dụng.',
+    'module3.title': 'Bài 4: Bảng tuần hoàn tương tác',
+    'module3.desc': 'Cách đọc ô nguyên tố, chu kỳ, nhóm và đặc điểm kim loại, phi kim, khí hiếm.',
+    'module4.title': 'Bài 7: Hóa trị & Lập công thức',
+    'module4.desc': 'Quy tắc chéo, rút gọn tỉ lệ, bỏ chỉ số 1 và phân biệt chỉ số dưới với hệ số.',
+    'module5.title': 'Bài 6: Liên kết & Studio phân tử',
+    'module5.desc': 'Mô hình chia sẻ electron, liên kết đơn/đôi/ba và tương tác ion hút nhau.',
+    'module6.title': 'Thử thách tổng hợp & Đánh giá',
+    'module6.desc': 'Bài kiểm tra 10 câu hỏi bao quát với phản hồi chi tiết, ví dụ tương tự và chứng nhận hoàn thành.',
+
+    // Quiz & Mission
+    'quiz.title': 'Thử thách Đánh giá Năng lực KHTN 7',
+    'quiz.question': 'Câu hỏi',
+    'quiz.score': 'Điểm số của bạn',
+    'quiz.completeTitle': 'Chúc mừng bạn đã hoàn thành bài kiểm tra!',
+    'quiz.completeDesc': 'Bạn đã vượt qua các câu hỏi cốt lõi của chương trình Hóa học 7 KHTN Kết nối tri thức.',
+    'quiz.passBadge': 'Đạt chuẩn kiến thức KHTN 7 (>= 80%)',
+    'quiz.reviewHint': 'Xem lại các câu giải thích chi tiết bên dưới để củng cố kiến thức.',
+    'quiz.certificate': 'Chứng nhận Khám phá Hóa học 7',
+
+    // Settings
+    'settings.title': 'Cài đặt & Tiến độ học tập',
+    'settings.language': 'Ngôn ngữ hiển thị (Language)',
+    'settings.sound': 'Hiệu ứng âm thanh (Web Audio nội bộ)',
+    'settings.reducedMotion': 'Giảm chuyển động (Dành cho thiết bị yếu hoặc người dùng nhạy cảm)',
+    'settings.fontSize': 'Cỡ chữ hiển thị',
+    'settings.fontSizeNormal': 'Tiêu chuẩn',
+    'settings.fontSizeLarge': 'Lớn',
+    'settings.fontSizeXLarge': 'Rất lớn',
+    'settings.resetWarning': 'Hành động này sẽ xóa toàn bộ điểm số, tiến độ học và trạng thái hoàn thành trên thiết bị này.',
+    'settings.offlineStatus': 'Trạng thái lưu trữ: Dữ liệu lưu cục bộ trong LocalStorage thiết bị này.'
+  },
+  en: {
+    // App header & Nav
+    'app.title': 'Chemistry Explorer 7',
+    'app.subtitle': 'Interactive Secondary Chemistry Simulation – Grade 7 Curriculum',
+    'nav.home': 'Home',
+    'nav.path': 'Learning Path',
+    'nav.modules': 'Modules',
+    'nav.periodicTable': 'Periodic Table',
+    'nav.formulaWorkshop': 'Formula Workshop',
+    'nav.moleculeStudio': 'Molecule Studio',
+    'nav.mission': 'Missions & Quiz',
+    'nav.progress': 'Progress',
+    'nav.settings': 'Settings',
+    'offline.badge': '100% Offline Ready',
+    'offline.tooltip': 'All datasets, models, and interactive activities are fully bundled locally without network access.',
+    'curriculum.badge': 'Grade 7 Science – Lessons 2 to 7',
+
+    // Core concepts
+    'concept.atom': 'Atom',
+    'concept.element': 'Chemical Element',
+    'concept.molecule': 'Molecule',
+    'concept.substance': 'Substance',
+    'concept.symbol': 'Chemical Symbol',
+    'concept.valency': 'Valency',
+    'concept.formula': 'Chemical Formula',
+    'concept.bond': 'Chemical Bond',
+    'concept.group': 'Group',
+    'concept.period': 'Period',
+    'concept.atomicNumber': 'Atomic Number (Z)',
+    'concept.mass': 'Relative Atomic Mass',
+
+    // Actions
+    'action.start': 'Start Learning',
+    'action.continue': 'Continue',
+    'action.explore': 'Explore',
+    'action.reset': 'Reset',
+    'action.check': 'Check Answer',
+    'action.retry': 'Try Again',
+    'action.next': 'Next Question',
+    'action.prev': 'Previous Question',
+    'action.showHint': 'Show Hint',
+    'action.hideHint': 'Hide Hint',
+    'action.similarExample': 'Similar Example',
+    'action.pause': 'Pause',
+    'action.play': 'Play Animation',
+    'action.rotate': 'Rotate Model',
+    'action.close': 'Close',
+    'action.resetAngle': 'Reset View Angle',
+    'action.resetProgress': 'Reset All Progress',
+    'action.confirmReset': 'Yes, reset my progress',
+    'action.cancel': 'Cancel',
+    'action.search': 'Search',
+    'action.filterAll': 'All',
+    'action.filterMetals': 'Metals',
+    'action.filterNonmetals': 'Non-metals',
+    'action.filterNoble': 'Noble Gases',
+    'action.save': 'Save',
+
+    // Feedback
+    'feedback.correct': 'Correct! Great job!',
+    'feedback.tryAgain': 'Not quite. Read the hint and give it another try.',
+    'feedback.explanation': 'Scientific Explanation',
+    'feedback.nextStep': 'Next Step',
+    'feedback.misconceptionNotice': 'Misconception Alert',
+
+    // Periodic Table
+    'periodic.title': 'Interactive Periodic Table of Elements',
+    'periodic.subtitle': 'Explore 20+ core elements aligned with Grade 7 Science',
+    'periodic.searchPlaceholder': 'Search by name, symbol (H, Na, C) or Z number...',
+    'periodic.empty': 'No matching elements found.',
+    'periodic.clickHint': 'Click any element tile to inspect its Bohr electron shells and real-world uses.',
+    'periodic.legend': 'Category Legend:',
+    'periodic.grade7Scope': 'Focus on the first 20 elements (H to Ca) + Fe, Cu, Zn, Ag, Ba.',
+    'periodic.electrons': 'Electron Shell Configuration:',
+
+    // Formula Workshop
+    'formula.title': 'Chemical Formula Workshop',
+    'formula.subtitle': 'Master the cross-over method & lowest whole-number subscript ratios',
+    'formula.choosePair': 'Select an element pair to practice:',
+    'formula.ruleTitle': 'Valency rule: a × x = b × y',
+    'formula.step1': 'Step 1: Write AxBy with corresponding valencies',
+    'formula.step2': 'Step 2: Cross-over ratio x / y = b / a',
+    'formula.step3': 'Step 3: Simplify fraction to lowest terms',
+    'formula.step4': 'Step 4: Write chemical formula (Omit subscript 1)',
+    'formula.result': 'Resulting Formula:',
+    'formula.subVsCoeffTitle': 'Distinguishing Subscripts vs Coefficients',
+    'formula.interactiveSandbox': 'Free Formula Builder Sandbox',
+
+    // Molecule & Bond Studio
+    'studio.title': 'Chemical Bonding & Molecule Studio',
+    'studio.subtitle': 'Animated 2D diagrams & interactive rotatable 3D ball-and-stick models',
+    'studio.selectMolecule': 'Select a substance to observe:',
+    'studio.rotateHint': 'Drag or swipe to rotate the 3D model freely in space.',
+    'studio.view2D': '2D Structural Diagram',
+    'studio.view3D': '3D Rotatable Model',
+    'studio.covalentExplain': 'Covalent bond: Nonmetal atoms share pairs of electrons to attain stable outer electron octets.',
+    'studio.ionicExplain': 'Ionic bond: Metal atoms transfer electrons to nonmetal atoms, forming oppositely charged ions held by electrostatic attraction.',
+
+    // Limitations
+    'model.limitations': 'Model limitations: The ball-and-stick representations are pedagogical models helping visualize connectivity and geometry. Real atoms do not have rigid physical sticks and sizes are not drawn to exact scale.',
+
+    // Modules
+    'module1.title': 'Lessons 2 & 5: Particle World & Matter',
+    'module1.desc': 'Explore Rutherford-Bohr atoms and distinguish Atoms, Elements, Molecules, and Compounds.',
+    'module2.title': 'Lesson 3: Element Names & Symbols',
+    'module2.desc': 'Master capitalization conventions (C vs Ca) and memorize common element symbols.',
+    'module3.title': 'Lesson 4: Interactive Periodic Table',
+    'module3.desc': 'Learn to read element tiles, periods, groups, and distinctions between metals and nonmetals.',
+    'module4.title': 'Lesson 7: Valency & Formula Building',
+    'module4.desc': 'Cross-over method, ratio reduction, omitting subscript 1, and subscript vs coefficient.',
+    'module5.title': 'Lesson 6: Chemical Bonds & Molecules',
+    'module5.desc': 'Electron sharing, single/double/triple bonds, and ionic crystal lattices.',
+    'module6.title': 'Comprehensive Missions & Quiz',
+    'module6.desc': '10-question mastery challenge with explanations, similar examples, and achievement certificate.',
+
+    // Quiz & Mission
+    'quiz.title': 'Grade 7 Science Chemistry Mastery Quiz',
+    'quiz.question': 'Question',
+    'quiz.score': 'Your Score',
+    'quiz.completeTitle': 'Congratulations! Challenge Completed!',
+    'quiz.completeDesc': 'You have demonstrated solid understanding of Grade 7 Chemistry concepts.',
+    'quiz.passBadge': 'Mastery Standard Achieved (>= 80%)',
+    'quiz.reviewHint': 'Review the detailed explanations below to reinforce your knowledge.',
+    'quiz.certificate': 'Grade 7 Chemistry Certificate of Achievement',
+
+    // Settings
+    'settings.title': 'Settings & Learning Progress',
+    'settings.language': 'Display Language',
+    'settings.sound': 'Sound Effects (Synthesized Web Audio)',
+    'settings.reducedMotion': 'Reduced Motion (For motion sensitivity or lower-power devices)',
+    'settings.fontSize': 'Font Size',
+    'settings.fontSizeNormal': 'Normal',
+    'settings.fontSizeLarge': 'Large',
+    'settings.fontSizeXLarge': 'Extra Large',
+    'settings.resetWarning': 'This action will erase all scores, progress, and completed tasks on this device.',
+    'settings.offlineStatus': 'Storage Status: All progress is stored locally in device LocalStorage.'
+  }
+} as const;
+
+export type TranslationKey = keyof typeof TRANSLATIONS.vi;
